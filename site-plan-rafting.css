@@ -6,25 +6,25 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #335C67   ;
-  --secondary-color: #3A9896 ;
-  --accent1-color: #FF6B6B;
-  --accent2-color: FFE66D;
+  --primary-color: #C4D6B0;
+  --secondary-color: #A5BFAA;
+  --accent1-color: #86A8A4;
+  --accent2-color: #779DA1;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Montserrat", sans-serif;
   --paragraph-font: "Open Sans", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #335C67;  /* headlines on a white background */ 
-  --headline-color-on-color: FFFFFF; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #335C67; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: FFFFFF; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #335C67  ;
+  --headline-color-on-white: #67919E;  /* headlines on a white background */ 
+  --headline-color-on-color: #57859B; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #C4D6B0; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #57859B; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #5885A1;
   --nav-link-color: #335C67;
-  --nav-background-color: #3A9896;
-  --nav-hover-link-color: FFFFFF;
-  --nav-hover-background-color: #335C67;
+  --nav-background-color: #5885A1;
+  --nav-hover-link-color: #57859B;
+  --nav-hover-background-color: #C4D6B0;
 }
 
 
