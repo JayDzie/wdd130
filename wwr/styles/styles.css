@@ -1,52 +1,98 @@
-/* Reset some default styles */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
+header a:hover{
+    font-size: 2em;
 }
 
-/* Apply some basic styles */
-body {
-    font-family: 'Your Font Name', Arial, sans-serif;
-    background-color: #f0f0f0; /* Your background color */
-    color: #333; /* Your text color */
-    line-height: 1.6;
-    padding: 20px;
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+   
 }
 
-header {
-    background-color: #333; /* Your header background color */
-    color: #fff; /* Your header text color */
+nav a, #hero-msg h1, #hero-msg h4, .button-box, .home-grid, #hero-box {
     text-align: center;
+}
+
+#hero{
+    margin-bottom: 20px;
+}
+
+body{
+    background-color: #d3e7f3;
+}
+
+header{
+    background-color: #779DA1;
+}
+
+nav a:hover{
+    background-color: #A5BFAA;
+    text-decoration: none;
+}
+
+.book, .join{
+    background-color: #C4D6B0;
+    text-decoration: none;
+}
+
+.book:hover, .join:hover{
+    background-color: #81bd8d;
+    text-decoration: none;
+}
+
+.msg{
+    background-color: #779DA1;
+}
+
+footer{
+    background-color: #5885A1;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: #A5BFAA;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#hero-msg{
+    background-color: #779DA1;
+}
+
+#background{
+    height: 725px;
+    background-color: #779DA1;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto; 
+}
+
+.icon {
+    width: 80px;
+}
+
+/* Moving the navigation to the right for a better look. */
+nav {
+    float: right;
+    font-size: 18px;
     padding: 10px;
+    margin-top: 20px;
 }
 
-header h1 {
-    font-size: 24px;
-}
-
-section {
-    background-color: #fff; /* Your section background color */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: #333; /* Your section header text color */
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-section p {
-    font-size: 16px;
-    line-height: 1.4;
-    color: #666; /* Your section paragraph text color */
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+nav a {
+    padding: 10px 20px;
+    margin-right: 20px;
+    text-decoration: none;
 }
 
 /* Add more CSS styles for your style guide, color palette, fonts, navigation, and other sections */
