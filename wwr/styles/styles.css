@@ -1,5 +1,4 @@
-nav a, .home-title, h4, .book, .join, .book:hover, 
-.join:hover, .msg h2, .msg p, footer, footer a, footer a:hover {
+.home-title, h4, .msg h2, .msg p{
     color: #000000;
 }
 
@@ -37,11 +36,13 @@ nav a:hover{
 }
 
 .book, .join{
+    color: #000000;
     background-color: #C4D6B0;
     text-decoration: none;
 }
 
 .book:hover, .join:hover{
+    color: #000000;
     background-color: #81bd8d;
     text-decoration: none;
 }
@@ -51,6 +52,7 @@ nav a:hover{
 }
 
 footer{
+    color: #000000;
     background-color: #5885A1;
 }
 
@@ -60,12 +62,14 @@ footer p{
 
 footer a{
     text-decoration: none;
+    color: #000000;
 }
 
 footer a:hover{
     background-color: #A5BFAA;
     font-size: 2em;
     text-decoration: underline;
+    color: #000000;
 }
 
 #hero-msg{
@@ -103,7 +107,7 @@ nav a {
     padding: 10px 20px;
     margin-right: 20px;
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 /* Add more CSS styles for your style guide, color palette, fonts, navigation, and other sections */
