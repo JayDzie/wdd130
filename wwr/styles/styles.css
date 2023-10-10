@@ -9,7 +9,7 @@ header a:hover{
    
 }
 
-nav a, #hero-msg h1, #hero-msg h4, .button-box, .home-grid, #hero-box {
+nav a, #hero-msg h1, #hero-msg h4, .button-box, .home-grid, #hero-box, main {
     text-align: center;
 }
 
