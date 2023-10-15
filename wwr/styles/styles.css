@@ -1,11 +1,11 @@
 @import url('https://fonts.google.com/specimen/Young+Serif');
 /*The font family above is for the body*/
 
-@import url('https://fonts.googleapis.com/css?family=Alumni+Sans+Collegiate+One');
+@import url('https://fonts.google.com/specimen/Kanit');
 /*The font above is for headings: h1, h2, h4*/
 .home-title, h4, .msg h2, .msg p{
     color: #000000;
-    font-family: 'Alumni Sans Collegiate One', Helvetica, sans-serif;
+    font-family: 'Kanit', Helvetica, sans-serif;
 }
 
 .home-title{
