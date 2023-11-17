@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles_rivers.css">
+ </head>
+
+ <body>
+    <div id="content">
+      <header>
+        <a href="index.html" id="logo_link">
+        <img class="logo" src="https://byui-wdd.github.io/wdd130/rafting_images/logo.png" alt="Dry Oar Logo">
+        </a>
+ 
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="rivers.html">Rivers</a>
+        <a href="site-plan-rafting.html">Site Plan</a>
+        <a href="contactus.html">Contact</a>
+        </nav>  
+
+      </header>
+
+      <div id="hero-rivers">
+       <section id="hero-msg">
+             <h1 class="home-title">Rivers</h1>
+             <h4>Check out our Amazing Rivers</h4>
+             <div class='button-box'>
+                 <a class='book' href="contactus.html">Book Now</a>
+             </div>
+       </section> 
+      
+
+       <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/image_1.jpg" style="width:100%" alt="Colorado River">
+          <div class="text-block">
+            <h4>Rivers</h4>
+            <p>We can't survive without them.</p>
+          </div>
+        </div>
+    
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/image_2.jpg" style="width:100%" alt="Arkansas River">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/image_3.jpg" style="width:100%" alt="New River">
+        </div>
+            
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/image_4.jpg" style="width:100%" alt="Chattooga River">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/image_5.jpg" style="width:100%" alt="Snake River">
+        </div>
+            
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/image_6.jpg" style="width:100%" alt="Kenai River">
+        </div>
+            
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+        
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/image_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Colorado River">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/image_2.jpg" style="width:100%; height: 140.5px;" onclick="currentSlide(2)" alt="Arkansas River">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/image_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="New River">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/image_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Chattooga River">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/image_5.jpg" style="width:100%; height: 140.5px;" onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="images/image_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snake River">
+          </div>
+        </div>
+       </div>
+      </div>
+      
+
+      
+      
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+      </script>
+    </div>
+
+    <div class="space">
+      <h2>Learn More About Our Rivers.</h2>
+    </div>
+
+
+    <div class="middle-row">
+      <div class="container-overlay">
+        <img src="images/image_1.jpg" alt="Avatar" class="image-overlay">
+        <div class="overlay-overlay">
+          <div class="text-overlay">The Colorado River flows through seven U.S. states: Wyoming, Colorado, New Mexico, Utah, Nevada, Arizona, and California.</div>
+        </div>
+      </div>
+
+      <div class="container-overlay-text1">
+        <h2 class="middle-header">Colorado River.</h2>
+        <p class="middle-paragraph">The Colorado River, a lifeline of the American Southwest, winds through seven U.S. states, offering a thrilling adventure for water enthusiasts. Known for the iconic Grand Canyon, the Colorado River provides breathtaking scenery, challenging rapids, and opportunities for unforgettable rafting expeditions.
+        </p>
+      </div>
+
+      <div class="container-overlay3">
+        <img src="images/image_2.jpg" alt="Avatar" class="image-overlay3">
+        <div class="overlay-overlay3">
+          <div class="text-overlay3">The Arkansas River flows through Colorado.
+            Notable Feature: Rafters on the Arkansas River enjoy the backdrop of the Rocky Mountains, including sections like the Royal Gorge and Bighorn Sheep Canyon.</div>
+        </div>
+      </div>
+
+      <div class="container-overlay-text2">
+        <h2 class="middle-header">Snake River.</h2>
+        <p class="middle-paragraph">The Snake River, originating in Wyoming and flowing through the majestic landscapes of Idaho and Oregon, is a paradise for whitewater rafting. Renowned for its picturesque canyons and diverse wildlife, the Snake River offers a mix of exhilarating rapids and tranquil stretches, catering to both seasoned rafters and beginners.
+        </p>
+      </div>
+
+      <div class="container-overlay4">
+        <img src="images/image_3.jpg" alt="Avatar" class="image-overlay4">
+        <div class="overlay-overlay4">
+          <div class="text-overlay4">Location: The New River flows through North Carolina, Virginia, and West Virginia.
+            Notable Feature: Known as the "Grand Canyon of the East," the New River offers a scenic journey through the Appalachian Mountains.</div>
+        </div>
+      </div>
+
+      <div class="container-overlay-text3">
+        <h2 class="middle-header">  Arkansas River.</h2>
+        <p class="middle-paragraph">The Arkansas River, meandering through Colorado, is a premier destination for rafting enthusiasts. Surrounded by the towering peaks of the Rocky Mountains, the river boasts a variety of rapids suitable for all skill levels. From the challenging Royal Gorge to the family-friendly Bighorn Sheep Canyon, the Arkansas River provides a dynamic rafting experience amid breathtaking mountain scenery.
+        </p>
+      </div>
+
+      <div class="container-overlay5">
+        <img src="images/image_4.jpg" alt="Avatar" class="image-overlay5">
+        <div class="overlay-overlay5">
+          <div class="text-overlay5">Location: The Chattooga River forms the border between Georgia and South Carolina.
+            Notable Feature: Designated as a Wild and Scenic River, the Chattooga is known for its pristine and untouched natural surroundings.</div>
+        </div>
+      </div>
+
+      <div class="container-overlay-text4">
+        <h2 class="middle-header">New River</h2>
+        <p class="middle-paragraph">The New River, flowing through the Appalachian Mountains in West Virginia, is recognized for its diverse rapids and rich history. Offering a blend of both calm waters and thrilling rapids, this river provides an exciting journey through picturesque gorges and dense forests. Rafters on the New River can expect a perfect balance of adventure and natural beauty.
+        </p>
+      </div>
+
+      <div class="container-overlay6">
+        <img src="images/image_5.jpg" alt="Avatar" class="image-overlay6">
+        <div class="overlay-overlay6">
+          <div class="text-overlay6">Location: The Kenai River is located in the state of Alaska.
+            Notable Feature: Rafting on the Kenai River provides a unique opportunity to experience Alaska's wilderness, including encounters with salmon and other wildlife.</div>
+        </div>
+      </div>
+
+      <div class="container-overlay-text5">
+        <h2 class="middle-header">Chattooga River</h2>
+        <p class="middle-paragraph">The Chattooga River, cascading through the border of Georgia and South Carolina, is a designated Wild and Scenic River known for its pristine wilderness and challenging rapids. As the only river in the Southeast with a "Wild" designation, the Chattooga promises an unspoiled and thrilling rafting experience, surrounded by lush forests and striking waterfalls.</p>
+      </div>
+
+      <div class="container-overlay2">
+        <img src="images/image_6.jpg" alt="Avatar" class="image-overlay2">
+        <div class="overlay-overlay2">
+          <div class="text-overlay2">Originating in Wyoming, the Snake River flows through Idaho and Oregon. The Snake River provides stunning views of the Teton Range and Snake River Canyon.</div>
+        </div>
+      </div>
+
+      <div class="container-overlay-text6">
+        <h2 class="middle-header">Kenai River</h2>
+        <p class="middle-paragraph">The Kenai River, located in Alaska, is a unique destination for rafting, offering a journey through pristine wilderness and stunning landscapes. Rafting on the Kenai provides the opportunity to witness diverse wildlife, including salmon and bald eagles, while navigating through glacial-fed waters. This northern gem offers a serene yet exhilarating rafting experience in the heart of Alaska's natural wonders.
+      </div>
+
+    </div> 
+
+    <section class="msg-river">
+      <h2>Embark on Your Next Adventure</h2>
+      <p>Dive into the heart of nature's wonders with our unforgettable rafting experiences. Whether you're seeking the rush of challenging rapids or a tranquil journey through scenic landscapes, we've got the perfect expedition for you. Join us for an immersive outdoor escape that blends excitement with the serenity of nature.</p>
+      <a class='join' href="rivers.html">Book Your Adventure Today</a>   
+   </section>
+
+    <footer>
+      <p>Dry Oar &copy; 2023 - Joel Dadzie</p>
+      <p><a href="site-plan-rafting.html">Site Plan</a></p>
+      <p><a href="contactus.html">Contact Us</a></p>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon">
+        </a>
+      </div>
+    </footer>
+    
+  </body>
+</html>
