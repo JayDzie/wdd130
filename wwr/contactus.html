@@ -61,9 +61,8 @@
                 height: 5em;
             }
             
-            .butto button {
-                /* Align buttons with the text fields */
-                padding: 1em 2em; /* same size as the label elements */
+            .button button {
+                padding: 1em 2em; 
                 font-size: 1.2em;
                 background-color: #4CAF50;
                 color: white;
@@ -79,10 +78,16 @@
             }
 
             .button button:hover {
-                background-color: #45a049; /* Change background color on hover */
+                background-color: #45a049; 
             }
 
     </style>
+    <script>
+        function submitForm() {        
+            document.getElementById("messageContainer").innerHTML = "<p>Form submitted successfully!</p>";
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -114,7 +119,7 @@
         </section>
     </div>
 
-    <form action="/my-handling-form-page" method="post">
+    <form action="javascript:void(0);" method="post" onsubmit="return submitForm()">
         <ul>
             <li>
               <label for="name">Name:</label>
@@ -133,6 +138,8 @@
             </li>      
         </ul>
     </form>
+
+    <div id="messageContainer" style="text-align: center;"></div>
 
     <footer>
         <p>Dry Oar &copy; 2023 - Joel Dadzie</p>
