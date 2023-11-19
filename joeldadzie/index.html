@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website | Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo_link">
+        <img class="logo" src="images/Jdadzie_logo.png" alt="Profile Logo">
+        </a>
+ 
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        </nav>
+        
+        <div class="social">
+            <a href="linkedin.com/in/joel-dadzie/" target="_blank">
+                <img src="images/linkedin_icon.png" alt="LinkedIn icon" style="width: 2%;">
+            </a>
+        </div>
+    </header>
+
+    <hr>
+
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/me2.jpeg" alt="Image of Joel Dadzie" style="width: 10%;">
+        </div>
+        
+        <div class="hero-msg-left">
+            <h1>Project Manager</h1>
+            <p>Project manager in the dynamic fields of software development, mobile apps, and recruitment.</p>
+        </div>
+
+        <div class="hero-msg-right">
+            <h1>Software Developer</h1>
+            <p>Full stack developer who writes clean, elegant, and efficient code.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <main class="home-sections">
+        <section class="who-am-i">
+            <div class="who-am-i-text">
+                <h2>Who Am I?</h2>
+                <p>
+                    A results-driven and highly motivated full stack developer and project manger
+                    with a strong background in computer science from the University
+                    of Ghana, Legon, and software development at BYU-Idaho Online.
+                    Possessing excellent leadership and organizational skills,
+                    I am committed to delivering successful projects by coordinating teams, 
+                    managing resources, and ensuring timely project completion. 
+                    I strive to drive excellence in every aspect of project management. 
+                </p>
+            </div>
+            <div class="button-box">
+                <a class="about-me" href="aboutme.html">More About Me</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="my-work">
+            <div class="my-work-text">
+                <h2>My Work</h2>
+                <p>
+                    Take a look at some of my latest project, where I've showcased my ability
+                    to deliver quality results. Hover over the images for more informatino or 
+                    click to learn more about each project. I take pride in my work, and I'm
+                    always eager to take on new challenes and create innovative solutions.
+                </p>
+            </div>
+
+            <div class="my-work-images">
+                <img class="section-image" src="images/gorilla.PNG" alt="Portfolio image" style="width: 10%;">
+                <img class="section-image" src="images/gorilla1.PNG" alt="Portfolio image" style="width: 10%;">
+                <img class="section-image" src="images/Portfolio1.jpeg" alt="Portfolio image" style="width: 10%;">
+                <img class="section-image" src="images/portfolio2.jpeg" alt="Portfolio image" style="width: 10%;">
+                <img class="section-image" src="images/tourizilla1.PNG" alt="Portfolio image" style="width: 10%;">
+                <img class="section-image" src="images/logo.PNG" alt="Portfolio image" style="width: 10%;">
+            </div>
+
+            <div class="button-box">
+                <a class="portfolio" href="portfolio.html">Go To Portfolio</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="get-in-touch">
+            <div>
+                <h2>Get In Touch</h2>
+            </div>
+
+            <div class="get-in-touch-image">
+                <img src="images/location.PNG" alt="map image" style="width: 10%;">
+            </div>
+
+            <div class="address">
+                <div class="address-section">
+                    <img src="images/addres.png" alt="address icon" style="width: 5%;">
+                    <p class="small-font-address">Accra, Ghana</p>
+                </div>
+                <div class="address-section">
+                    <img src="images/phone.png" alt="phone number icon" style="width: 5%;">
+                    <p class="small-font-address">Phone: +233-557-979-473</p>
+                </div>
+                <div class="address-section">
+                    <img src="images/email.png" alt="email icon" style="width: 5%;">
+                    <p class="small-font-address">Email: Joeldadzie.jd@gmail.com</p>
+                </div>
+            </div>
+
+            <form action="javascript:void(0);" method="post" onsubmit="return submitForm()">
+                <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="user_name" value="Enter your full name." />
+                    </li>
+                    <li>
+                      <label for="mail">Email:</label>
+                      <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                      <label for="msg">Message:</label>
+                      <textarea id="msg" name="user_message">Type your message here.</textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send a message</button>
+                    </li>      
+                </ul>
+            </form>
+        </section>
+
+        <hr>
+        
+    </main>
+
+
+    <footer>
+        <p>Personal Website &copy; 2023 - Joel Dadzie</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
