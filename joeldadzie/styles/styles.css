@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kay+Pho+Du&display=swap');
+
+
+header, footer {
+    background-color: #967AA1;
+}
+
+header {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+}
+
+.logo {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.social{
+    margin-top: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+nav a {
+    padding: 10px 35px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    
+}
+
+#hero-box {
+    grid-column: 5/7;
+    grid-row: 1/4;
+    padding-top: 40%;
+    box-sizing: border-box;
+}
+
+#hero-img {
+    border: 10px solid #d9c2a3;
+    width: 100%;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+    
+
+#hero-img:hover{
+    opacity: .6;
+    transform: scale(1.1);  
+}
+
+.hero-msg-left{
+    grid-column: 3/ 5;
+    grid-row: 3 / 5;
+    z-index: 1;
+}
+
+.hero-msg-right{
+    grid-column: 7 / 10  ;
+    grid-row: 3 / 5;
+    padding-left: 60px;
+}
+
+.who-am-i h2, .who-am-i p{
+    text-align: center;
+}
+
+.who-am-i p{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+
+.button-box{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 1%;
+}
+
+.about-me, .portfolio{
+    
+    color: #000000;
+    background-color: #C4D6B0;
+    text-decoration: none;
+    padding: 15px 30px 10px 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.about-me:hover, .portfolio:hover{
+    background-color: #967AA1
+}
+
+.portfolio{
+    margin-top: 60%;
+}
+
+.my-work-text h2, .my-work-text p{
+    text-align: center;
+}
+
+.my-work-text p{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.my-work-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    border: 10px solid #967AA1;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+    
+
+.section-image:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
+.section-image:nth-child(1) {
+    grid-column: span 2; 
+}
+
+.section-image:nth-child(2) {
+    grid-column: span 2; 
+}
+
+.section-image:nth-child(3) {
+    grid-column: span 3; 
+}
+
+.section-image:nth-child(4) {
+    grid-row: 1 / span 3;
+    height: 100%;
+}
+
+.get-in-touch {
+    display: grid;
+}
+
+.get-in-touch h2{
+    text-align: center;
+}
+
+.address-section {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
+.address-section img {
+    margin-right: 2%;
+    align-items: first baseline;
+}
+
+.address-section:nth-child(1){
+    padding-right: 34%;
+}
+
+.address-section:nth-child(2){
+    padding-right: 10%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.merger{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.get-in-touch-image{
+    margin-top: 3%;
+    justify-content: right;
+    box-sizing: border-box;
+    grid-column: 2/3;
+    grid-row:  2/3;
+    border: 10px solid #967AA1;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.address-and-form{
+    grid-column: 3/ 4;
+    grid-row: 2/3;
+}
+
+
+h1, h2{
+    font-family: 'DM Serif Display';
+    font-size: 2.1rem;
+}
+
+p {
+    font-family: 'Kay Pho Du';
+    font-size: 20px;
+}
+
+body{
+    background-color: #F5E6E8;
+    
+}
+
+.who-am-i {
+    background-color: #D5C6E0;
+    border: 10px solid #d9c2a3;
+    width: 100%;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.get-in-touch{
+    background-color: #D5C6E0;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px; 
+    text-decoration: none;
+}
+
+.social-icons a:last-child {
+    width: 68px;
+}
+
+.social-icons a:nth-child(4) img{
+    width: 100%;
+}
+
+
+.footer-content p:last-child{
+    padding-right: 80px;
+}
