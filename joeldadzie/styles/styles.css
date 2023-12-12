@@ -129,7 +129,7 @@ nav a {
     margin: 0 auto;
 }
 
-.section-image{
+.section-image, #hero-img-pf, #hero-img-pf1, #hero-img-pf2{
     width: 100%;
     height: auto;
     border: 10px solid #967AA1;
@@ -138,7 +138,7 @@ nav a {
 }
     
 
-.section-image:hover, .lifestyle img:hover {
+.section-image:hover, .lifestyle img:hover, #hero-img-pf:hover, #hero-img-pf1:hover, #hero-img-pf2:hover {
     opacity: .6;
     transform: scale(1.1);
 }
@@ -297,7 +297,7 @@ body{
 }
 
 .aboutme-hero {
-    background-image: url(../images/homepage.jpg);
+    background-image: url('/joeldadzie/images/homepage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #f0f0f0;
@@ -481,9 +481,79 @@ footer .social {
     padding-bottom: 10px;
 }
 
+
 .social img{
     border-radius: 50%;
 }
+
+/*The Portfolio Page*/
+#hero-pf {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    
+}
+
+.hero-msg-left-pf {
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-right: 20%;
+}
+
+
+
+#hero-image-pf {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    animation: slide 10s infinite linear;
+}
+
+.hero-img-pf {
+        margin-right: 20px;
+        transition: transform 1s;
+}
+
+
+/*Main section*/
+
+.wudalounge, .gorilla-systems, .tourizilla, .tnscript {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.right-text {
+    padding-left: 10%;
+    padding-top: 4%;
+}
+
+.wudalounge img, .gorilla-systems img, .tourizilla img, .tnscript img {
+    margin-left: 20%;
+    border: 10px solid #967AA1;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.wudalounge img:hover, .gorilla-systems img:hover, .tourizilla img:hover, .tnscript img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
+
+.button-box .about-me{
+    margin-right: 80%;
+}
+
+
+
+
+
+
 
 /*below are keyframes*/
 
@@ -499,6 +569,18 @@ footer .social {
     to {
       opacity: 1;
       transform: translateX(0);
+    }
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
     }
 }
 
