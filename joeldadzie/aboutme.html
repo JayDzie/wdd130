@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href="index.html" id="logo_link">
-        <img class="logo" src="images/Jdadzie_logo.png" alt="Profile Logo">
+        <img class="logo" src="images/Jdadzie_logo.png" alt="Profile Logo" style="width: 40%;">
         </a>
  
         <nav>
@@ -21,36 +21,27 @@
         
         <div class="social">
             <a href="" target="_blank" >
-                <img src="images/linkedin_icon.png" alt="LinkedIn icon" style="width: 2%;">
+                <img src="images/linkedin_icon.png" alt="LinkedIn icon" style="width: 30%;">
             </a>
         </div>
     </header>
 
-    <hr>
 
-    <div id="hero">
-        <div id="hero-box">
-            <img id="hero-img" src="images/homepage.jpg" alt="hero background image" style="width: 5%;">
-        </div>
-        
-        <div class="hero-msg-left">
-            <h1>Joel Dadzie</h1>
-            <p>Project manager and Software Developer.</p>
-            <p>Accra, Ghana.</p>
-        </div>
-
-        <div class="hero-button">
-            <a class="contactme" href="contactme.html">Contact Me</a>
+    <div id="hero" class="aboutme-hero">
+        <div class="hero-msg-left-bkg">
+            <h1 class="drop-in">Joel Dadzie</h1>
+            <p class="drop-in">Project manager and Software Developer.</p>
+            <p class="drop-in">Accra, Ghana.</p>
+            <a class="contactme" id="contactme-box" href="contactme.html">Contact Me</a>
         </div>
     </div>
 
-    <hr>
 
-    <main class="home-sections">
-        <section class="about-me">
+    <main class="home-sections-am">
+        <section class="about-me-am">
             <div class="about-me-text">
-                <h2>About Me</h2>
-                <p>
+                <h2 class="slide-in">About Me</h2>
+                <p class="slide-in">
                     Welcome to my "About Me" page, where you can get to know
                     the person behind the projects and professional endeavours.
                     My journey as a Project Manager and Software Developer
@@ -59,28 +50,28 @@
                 </p>
             </div>
 
-            <h2>What I'm really good at:</h2>
+            <h2 class="slide-in">What I'm really good at:</h2>
 
-            <div id="pm">
+            <div id="pm" class="slide-in">
                 <div class="pm-icon">
-                    <img src="images/pm.png" alt="people-roof icon" style="width: 5%;">
+                    <img src="images/pm.png" alt="people-roof icon" style="width: 18%;">
                 </div>
                 <h2>Project Manager</h2>
             </div>
 
-            <div id="pm-progress">
-                <div id="myBar"></div>
+            <div id="progress" class="slide-in">
+                <div id="myBar" class="myBar-first"></div>
             </div>
 
-            <div id="fs">
+            <div id="fs" class="slide-in">
                 <div class="fs-icon">
-                    <img src="images/laptopcode.png" alt="laptop-code icon" style="width: 5%;">
+                    <img src="images/laptopcode.png" alt="laptop-code icon" style="width: 30%;">
                 </div>
                 <h2>Full Stack Developer</h2>
             </div>
 
-            <div id="fs-progress">
-                <div id="myBar"></div>
+            <div id="progress1" class="slide-in">
+                <div id="myBar1" class="myBar-second"></div>
             </div>
         </section>
 
@@ -92,9 +83,15 @@
             </div>
 
             <div class="my-background-images">
-                <img class="section-image" src="images/ug.png" alt="UG image" style="width: 5%;">
-                <img class="section-image" src="images/byu.png" alt="BYU image" style="width: 5%;">
-                <img class="section-image" src="images/prempeh.jpg" alt="Prempeh image" style="width: 5%;">
+                <img class="section-image" src="images/ug.png" alt="UG image" style="width: 20%;">
+                <img class="section-image" src="images/byu.png" alt="BYU image" style="width: 20%;">
+                <img class="section-image" src="images/prempeh.jpg" alt="Prempeh image" style="width: 20%;">
+            </div>
+
+            <div class="images-text">
+                <h3>University of Ghana</h3>
+                <h3>BYU</h3>
+                <h3>Prempeh College</h3>
             </div>
 
             <hr>
@@ -114,7 +111,8 @@
             <div>
                 <h2>Interest and Lifestyle:</h2>
                 <hr>
-                <img src="images/bball.jpeg" alt="a gym or basketball image" style="width: 5%;">
+                <div class="flex">
+                <img src="images/bball.jpeg" alt="a gym or basketball image" style="width: 20%;">
                 <p>
                     Beyond the world of software and project management, I'm an avide
                     basketball enthusiast and dedicated gym-goer. I find giong to the 
@@ -122,17 +120,33 @@
                     a space for personal growth and fitness. They also fuel my 
                     commitment to excellence both in professional and physical spaces.
                 </p>
+                 </div>
+
+                 <div class="flex">
+                    <img src="images/music.webp" alt="a gym or basketball image" style="width: 20%;">
+                    <p>
+                        Music is my lifeline, transcending genres from rock to gospel to hip-hop. 
+                        It's not just a beat; it's my meditation, my joy, my escape. 
+                        Whether I need a pick-me-up, a mood boost, or a balm for anxiety, 
+                        music is my constant companion, weaving through the rhythm of my days, 
+                        making every moment harmonious.
+                    </p>
+                     </div>
             </div>
+
+            <hr>
 
             <div>
                 <h2>Leadership and Organizational skills:</h2>
                 <hr>
-                <img src="images/group.jpg" alt="a group image" style="width: 5%;">
+                <div class="flex">
+                <img src="images/group.jpg" alt="a group image" style="width: 60%;">
                 <p>
                     My professional journey has equipped me with excellent leadership and organizational
                     skills. These qualities enable me to guid teams towards a shared vision, set clear 
                     objectives, and maintain a high level of organization throughout the project lifecycle.
                 </p>
+                </div>
             </div>
 
 
@@ -142,8 +156,6 @@
 
 
     <footer>
-        <p>Personal Website &copy; 2023 - Joel Dadzie</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="fb icon">
