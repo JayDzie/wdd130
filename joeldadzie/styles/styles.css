@@ -12,19 +12,19 @@ header {
 }
 
 .logo {
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 50%;
 }
 
 .social{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -86,7 +86,7 @@ nav a {
 }
 
 
-.button-box{
+.button-box, .hero-button{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -129,7 +129,7 @@ nav a {
     margin: 0 auto;
 }
 
-.section-image {
+.section-image{
     width: 100%;
     height: auto;
     border: 10px solid #967AA1;
@@ -138,7 +138,7 @@ nav a {
 }
     
 
-.section-image:hover{
+.section-image:hover, .lifestyle img:hover {
     opacity: .6;
     transform: scale(1.1);
 }
@@ -259,6 +259,12 @@ body{
     gap: 10px;
 }
 
+
+.social-icons img{
+    width: 70%;
+    border-radius: 50%;
+}
+
 .social-icons a {
     margin-right: 10px; 
     text-decoration: none;
@@ -268,11 +274,231 @@ body{
     width: 68px;
 }
 
-.social-icons a:nth-child(4) img{
-    width: 100%;
-}
+
 
 
 .footer-content p:last-child{
     padding-right: 80px;
 }
+
+
+/*about me specific styels*/
+/*homepage*/
+
+
+#contactme-box{
+    color: #000000;
+    background-color: #C4D6B0;
+    text-decoration: none;
+    padding: 15px 30px 10px 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.aboutme-hero {
+    background-image: url('/joeldadzie/images/homepage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 700px;
+    
+}
+
+
+
+.hero-msg-left-bkg{
+    grid-column: 1/ 5;
+    grid-row: 4 / 6;
+    z-index: 1;
+    padding-left: 10%;
+    
+}
+.hero-msg-left-bkg h1 {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 3px 3px 3px black;
+    font-size: 50px;
+    margin: 0%;
+}
+  
+.hero-msg-left-bkg p {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 4px 4px 4px black;
+    font-size: 25px;
+    padding: 0%;
+}
+
+
+/*animations*/
+
+.drop-in {
+    opacity: 0;
+    transform: translateY(-200px);
+    animation: dropInAnimation 1s ease-out forwards;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(500px);
+    animation: slideInAnimation 1s ease-out forwards;
+    text-align: center;
+
+}
+
+.slide-in h2{
+    padding-top: 20px;
+}
+
+
+/*end of animations*/
+
+
+/*About-Me section in About Me Page*/
+
+.about-me-text h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.about-me-text p{
+    text-align: center;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+/*position the pm and full stack dev icons close to the text using flex*/
+
+#pm, #fs {
+    display: flex;
+    justify-content: center;
+    padding-right: 550px;
+    
+}
+
+.pm-icon, .fs-icon {
+    padding-top: 55px;
+}
+
+.pm-icon img{
+    padding-left: 70px;
+}
+
+#pm h2{
+    padding-right: 130px;
+}
+
+
+/*css for the progress bar*/
+
+#progress, #progress1 {
+    width: 50%;
+    background-color: grey;
+    margin-left: 333px;
+}
+  
+#myBar, #myBar1 {
+    height: 30px;
+    background-color: #967AA1;
+}
+
+.myBar-first{
+    width: 80%
+}
+
+.myBar-second {
+    width: 60%
+}
+
+/*my background header*/
+
+.my-background-text {
+    text-align: center;
+}
+
+.my-background-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-text h3:nth-child(1){
+    padding-left: 80px;
+}
+
+
+.images-text:nth-child(3){
+    margin-right: 80px;
+}
+
+.my-background-text{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/*Interests section*/
+
+.lifestyle h2{
+    text-align: center;
+}
+
+.lifestyle p{
+    margin-left: 10%;
+    margin-right: 25%;
+}
+
+.lifestyle img {
+    margin-left: 22%;
+    border: 10px solid #967AA1;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lifestyle .flex:nth-of-type(2){
+    margin-top: 5%;
+}
+
+
+/*About Me Page footer*/
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.social img{
+    border-radius: 50%;
+}
+
+/*below are keyframes*/
+
+@keyframes dropInAnimation {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+ 
+@keyframes slideInAnimation {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
