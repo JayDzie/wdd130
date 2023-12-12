@@ -297,7 +297,7 @@ body{
 }
 
 .aboutme-hero {
-    background-image: url('wdd130/joeldadzie/images/homepage.jpg');
+    background-image: url('../images/homepage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #f0f0f0;
