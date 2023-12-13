@@ -93,7 +93,7 @@ nav a {
     margin-top: 1%;
 }
 
-.about-me, .portfolio{
+.about-me, .about-mes, .portfolio{
     
     color: #000000;
     background-color: #C4D6B0;
@@ -104,7 +104,7 @@ nav a {
     border-radius: 5px;
 }
 
-.about-me:hover, .portfolio:hover{
+.about-me:hover, .about-mes:hover, .portfolio:hover{
     background-color: #967AA1
 }
 
@@ -121,13 +121,6 @@ nav a {
     padding-right: 15%;
 }
 
-.my-work-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .section-image, #hero-img-pf, #hero-img-pf1, #hero-img-pf2{
     width: 100%;
@@ -143,23 +136,25 @@ nav a {
     transform: scale(1.1);
 }
 
-
-.section-image:nth-child(1) {
-    grid-column: span 2; 
+.first-three, .last-three {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
 }
 
-.section-image:nth-child(2) {
-    grid-column: span 2; 
+.first-three img:nth-of-type(1), .last-three img:nth-of-type(1) {
+    margin-left: 15%;
 }
 
-.section-image:nth-child(3) {
-    grid-column: span 3; 
+.first-three img:nth-of-type(2), .last-three img:nth-of-type(2) {
+    margin-right: 1%;
 }
 
-.section-image:nth-child(4) {
-    grid-row: 1 / span 3;
-    height: 100%;
+.first-three img:nth-of-type(3), .last-three img:nth-of-type(3) {
+    margin-right: 15%;
 }
+
+
 
 .get-in-touch {
     display: grid;
@@ -252,6 +247,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-content1 {
+    display: flex;
+    justify-content:space-around;
+    margin-right: 30%;
 }
 
 .social-icons {
