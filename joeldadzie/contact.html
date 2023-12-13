@@ -67,7 +67,7 @@
             <h3>Contact Form</h3>
             
             <div class="container">
-              <form action="" method="post">
+              <form action="" method="post" onsubmit="submitForm(event)">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
             
@@ -337,6 +337,19 @@
                 <input type="submit" value="Submit">
               </form>
             </div>
+
+            <div id="messageContainer"></div>
+    </div>
+    
+    <script>
+        function submitForm(event) {
+            // Prevent the form from submitting in the traditional way
+            event.preventDefault();
+    
+            // Display the message
+            document.getElementById("messageContainer").innerText = "Message Submitted!";
+        }
+    </script>
 
 
     </main>
