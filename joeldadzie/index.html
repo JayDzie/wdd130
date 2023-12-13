@@ -20,7 +20,7 @@
         </nav>
         
         <div class="social">
-            <a href="linkedin.com/in/joel-dadzie/" target="_blank">
+            <a href="https://linkedin.com/in/joel-dadzie/" target="_blank">
                 <img src="images/linkedin_icon.png" alt="LinkedIn icon" style="width: 30%;">
             </a>
         </div>
@@ -59,7 +59,7 @@
                 </p>
             </div>
             <div class="button-box">
-                <a class="about-me" href="aboutme.html">More About Me</a>
+                <a class="about-mes" href="aboutme.html">More About Me</a>
             </div>
         </section>
 
@@ -76,12 +76,16 @@
             </div>
 
             <div class="my-work-images">
-                <img class="section-image" src="images/gorilla.PNG" alt="Portfolio image">
-                <img class="section-image" src="images/gorilla1.PNG" alt="Portfolio image">
-                <img class="section-image" src="images/Portfolio1.jpeg" alt="Portfolio image">
-                <img class="section-image" src="images/portfolio2.jpeg" alt="Portfolio image">
-                <img class="section-image" src="images/tourizilla1.PNG" alt="Portfolio image">
-                <img class="section-image" src="images/logo.PNG" alt="Portfolio image">
+              <div class="first-three"> 
+                <img class="section-image" src="images/gorillac.PNG" alt="Portfolio image" style="width: 20%;">
+                <img class="section-image" src="images/gorilla1c.PNG" alt="Portfolio image" style="width: 20%;">
+                <img class="section-image" src="images/Portfolio1c.jpeg" alt="Portfolio image" style="width: 20%;">
+              </div>
+              <div class="last-three">  
+                <img class="section-image" src="images/portfolio2.jpeg" alt="Portfolio image" style="width: 20%;">
+                <img class="section-image" src="images/tourizilla1.PNG" alt="Portfolio image" style="width: 20%;">
+                <img class="section-image" src="images/logo.PNG" alt="Portfolio image" style="width: 20%;">
+              </div>
             </div>
         <div>
 
@@ -123,9 +127,9 @@
                 </div>
 
 
-                <div class="form">
+        <div class="form">
 
-            <form action="javascript:void(0);" method="post" onsubmit="return submitForm()">
+            <form action="javascript:void(0);" method="post" onsubmit="submitForm(event);">
                 <ul>
                     <li>
                       <label for="name">Name:</label>
@@ -143,7 +147,19 @@
                         <button type="submit">Send a message</button>
                     </li>      
                 </ul>
-            </form>
+        </form>
+        <div id="messageContainer"></div>
+    </div>
+    
+    <script>
+        function submitForm(event) {
+            // Prevent the form from submitting in the traditional way
+            event.preventDefault();
+    
+            // Display the message
+            document.getElementById("messageContainer").innerText = "Message Submitted!";
+        }
+    </script>
                 </div>
             </div>
             </div>
